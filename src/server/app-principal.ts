@@ -8,7 +8,7 @@ import * as MiniTools from 'mini-tools';
 
 // import {changing} from 'best-globals';
 
-import {ProceduresEjemploNoticias} from "./procedures-puntapie-inicial";
+import {ProceduresEjemploNoticias} from "./procedures-principal";
 
 import { ejemplo_noticias } from './table-ejemplo_noticias';
 import { ejemplo_vinculos } from './table-ejemplo_vinculos';
@@ -113,8 +113,8 @@ export class AppEjemploNoticias extends AppBackend{
                 { type: 'js', src: 'adapt.js' },
             ]:[])  satisfies ClientModuleDefinition[],
             { type: 'js', src: 'ejemplo_publicaciones.js' },
-            { type: 'js', src: 'ejemplo-pub-puntapie-inicial.js' },
-            { type: 'css', file: 'ejemplo-pub-puntapie-inicial.css' },
+            { type: 'js', src: 'ejemplo-pub-noticias.js' },
+            { type: 'css', file: 'ejemplo-pub-noticias.css' },
             { type: 'css', file: 'menu.css' },
             ... menuedResources
         ] satisfies ClientModuleDefinition[];

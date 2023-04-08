@@ -1,6 +1,6 @@
 "use strict";
 
-import {TableDefinition, TableContext, AppBackend} from "./types-puntapie-inicial";
+import {TableDefinition, TableContext, AppBackend} from "./types-principal";
 
 export function getPolicies(be:AppBackend){
     return {
