@@ -2,7 +2,7 @@
 
 import { AppBackend, ExpressPlus, Context, Request, 
     ClientModuleDefinition, OptsClientPage, MenuDefinition, MenuInfoBase
-} from "./types-puntapie-inicial";
+} from "./types-principal";
 
 import * as MiniTools from 'mini-tools';
 

@@ -1,6 +1,6 @@
 "use strict";
 
-import { ProcedureContext, ProcedureDef } from './types-puntapie-inicial';
+import { ProcedureContext, ProcedureDef } from './types-principal';
 
 export const ProceduresEjemploNoticias:ProcedureDef[] = [
     {
@@ -19,8 +19,8 @@ export const ProceduresEjemploNoticias:ProcedureDef[] = [
                         AND current_date <= $2
                     RETURNING TRUE
             `,[context.username, parameters.hasta_fecha]).fetchAll();
-            return !result.rows.length ? 'No habÃ­a noticias sin publicar hasta esa fecha para usted':(
-                result.rows.length==1?'se publicÃ³ una noticia':'se publicaron '+result.rows.length+' noticias'
+            return !result.rows.length ? 'No había noticias sin publicar hasta esa fecha para usted':(
+                result.rows.length==1?'se publicó una noticia':'se publicaron '+result.rows.length+' noticias'
             );
         }
     },
