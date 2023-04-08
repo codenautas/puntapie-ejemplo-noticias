@@ -1,13 +1,13 @@
 export const staticConfigYaml=`
 server:
-  port: 3021
+  port: 3001
   session-store: memory-saved
 db:
   motor: postgresql
   host: localhost
-  database: puntapie_inicial_db
-  schema: puntapie_inicial
-  user: puntapie_inicial_admin
+  database: ejemplo_noticias_db
+  schema: ejemplo_noticias
+  user: ejemplo_noticias_admin
 login:
   table: usuarios
   userFieldName: usuario
@@ -22,6 +22,7 @@ login:
     loginForm:
       formTitle: entrada
       formImg: unlogged/tables-lock.png
+    noLoggedUrlPath: /pub
 client-setup:
   menu: true
   lang: es
@@ -29,7 +30,7 @@ client-setup:
 install:
   dump:
     db:
-      owner: puntapie_inicial_owner
+      owner: ejemplo_noticias_owner
     scripts:
       post-adapt:
       - ../node_modules/pg-triggers/lib/recreate-his.sql

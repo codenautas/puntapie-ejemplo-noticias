@@ -53,7 +53,7 @@ Arrancar el backend
 npm start
 ```
 
-Y abrir el navegador en [http://localhost:3000/puntapie_inicial](http://localhost:3000/puntapie_inicial) o el puerto que figure en `local-config.yaml`
+Y abrir el navegador en [http://localhost:3000/ejemplo_noticias](http://localhost:3000/ejemplo_noticias) o el puerto que figure en `local-config.yaml`
 
 ###
 
