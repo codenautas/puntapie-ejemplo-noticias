@@ -95,6 +95,7 @@ export class AppEjemploNoticias extends AppBackend{
         var menuedResources:ClientModuleDefinition[]=req && opts && !opts.skipMenu ? [
             { type:'js' , src:'client.js' },
         ]:[
+            {type:'js' , src:'unlogged.js' },
         ];
         var list: ClientModuleDefinition[] = [
             ...(UsandoREact?[
